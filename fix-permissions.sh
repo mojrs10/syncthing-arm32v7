@@ -8,9 +8,9 @@ git config --global user.email "actions@github.com"
 
 echo "🔧 Postavljam prava na izvršavanje za potrebne fajlove..."
 
-chmod 755 root/etc/s6-overlay/s6-rc.d/svc-radarr/data/check
+chmod 755 root/etc/s6-overlay/s6-rc.d/svc-syncthing/run
 
-git add root/etc/s6-overlay/s6-rc.d/svc-radarr/data/check
+git add root/etc/s6-overlay/s6-rc.d/svc-syncthing/run
 
 # Provjeri je li bilo promjena
 if ! git diff-index --quiet HEAD --; then
