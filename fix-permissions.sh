@@ -22,9 +22,3 @@ if ! git diff-index --quiet HEAD --; then
 else
   echo "Nema promjena za commit."
 fi
-
-
-
-
-
-./etc/s6-overlay/s6-rc.d/svc-syncthing/run
