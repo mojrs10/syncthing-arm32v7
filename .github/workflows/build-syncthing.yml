@@ -9,7 +9,7 @@ name: Auto Build Syncthing
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *'  # svakodnevno u 04:00 UTC
+    - cron: '25 2 * * *'  # svakodnevno u 02:25 UTC
 
 env:
   PLATFORM: linux/arm/v7
