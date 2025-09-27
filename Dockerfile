@@ -1,9 +1,5 @@
 # syntax=docker/dockerfile:1
 
-# FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.17 as buildstage
-# FROM mojrapid/baseimage:alpine-3.18_s6_full AS buildstage
-# FROM mojrapid/baseimage:alpine-3.19_s6_full AS buildstage
-# FROM mojrapid/baseimage:alpine-3.20_s6_full as buildstage
 FROM mojrapid/baseimage:alpine-edge_s6_full AS buildstage
 
 # build variables
@@ -38,10 +34,6 @@ RUN \
     build syncthing
 
 ############## runtime stage ##############
-# FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.17
-# FROM mojrapid/baseimage:alpine-3.18_s6_full
-# FROM mojrapid/baseimage:alpine-3.19_s6_full
-# FROM mojrapid/baseimage:alpine-3.20_s6_full
 FROM mojrapid/baseimage:alpine-edge_s6_full
 
 # set version label
